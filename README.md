@@ -175,10 +175,6 @@ PYT_DISCERN -u train_sharc.py \
 
 Here we can directly do interence using our trained model `decision.pt`. You can also replace it with your own models by setting `--resume=/path/to/your/trained/models`.
 
-```bash
-ln -s ./out/train_decision/best.pt ./pretrained_models/decision.pt
-```
-
 ```shell
 PYT_DISCERN train_sharc.py \
 --dsave="./out/{}" \
