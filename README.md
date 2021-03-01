@@ -186,7 +186,7 @@ PYT_DISCERN train_sharc.py \
 --data=./data/ \
 --data_type=decision_roberta_base \
 --prefix=inference_decision \
---resume=./pretrained_models/decision.pt \
+--resume=./out/train_decision/best.pt \
 --trans_layer=2 \
 --test
 ```
@@ -231,10 +231,6 @@ PYT_DISCERN -u train_sharc.py \
 
 > inference
 
-```bash
-ln -s ./out/train_span/best.pt ./pretrained_models/span.pt
-```
-
 ```shell
 PYT_DISCERN -u train_sharc.py \
 --dsave="out/{}" \
@@ -242,7 +238,7 @@ PYT_DISCERN -u train_sharc.py \
 --data=./data/ \
 --data_type=span_roberta_base \
 --prefix=inference_span \
---resume=./pretrained_models/span.pt \
+--resume=./out/train_span/best.pt \
 --test
 ```
 
