@@ -16,7 +16,7 @@ IGNORE_WORDS = MATCH_IGNORE | PUNCT_WORDS
 MAX_LEN = 350
 FILENAME = 'roberta_base'
 FORCE=False
-MODEL_FILE = '/research/king3/ik_grp/yfgao/pretrain_models/huggingface/roberta-base'
+MODEL_FILE = './pretrained_models/roberta_base'
 tokenizer = RobertaTokenizer.from_pretrained(MODEL_FILE, cache_dir=None)
 DECISION_CLASSES = ['yes', 'no', 'more', 'irrelevant']
 ENTAILMENT_CLASSES = ['yes', 'no', 'unknown']
