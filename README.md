@@ -65,7 +65,7 @@ python setup.py install --cuda_ext --cpp_ext
 cd ..
 
 # setup unilm
-cd qg
+cd unilmqg
 pip install --editable .
 ```
 
